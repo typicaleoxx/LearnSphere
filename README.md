@@ -15,5 +15,4 @@ The project is organized into multiple Django apps:
 - Streak Tracking: Tracks user activity streaks to encourage engagement.
 - Attendance Management: Tracks user attendance in courses.
 
-Each app contains models, views, templates, and URLs to implement its functionality.
 
