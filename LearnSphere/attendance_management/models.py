@@ -1,3 +1,9 @@
 from django.db import models
-
+from authentication.models import User
+from course_management.models import Course
 # Create your models here.
+class Attendance(models.Model):
+    user=models.ForeignKey(User,on_delete=models.CASCADE)
+    course=models.ForeignKey(Course,on_delete=models.CASCADE)
+    date=models.DateField()
+    status=models.CharField(max_length=250)
