@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "discussion_forum",
     "streak_tracking",
     "task_management",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,49 @@
+# Project (LearnSphere)
+
+## Authentication App
+- **User**
+  - `username` (CharField)
+  - `email` (EmailField)
+  - `password` (CharField)
+
+## Course Management App
+- **Course**
+  - `name` (CharField)
+  - `instructor` (ForeignKey, User)
+  - `description` (TextField)
+  - `duration` (IntegerField)
+
+- **Enrollment**
+  - `user` (ForeignKey, User)
+  - `course` (ForeignKey, Course)
+  - `date_enrolled` (DateTimeField)
+
+## Discussion Forum App
+- **Discussion**
+  - `course` (ForeignKey, Course)
+  - `user` (ForeignKey, User)
+  - `message` (TextField)
+  - `timestamp` (DateTimeField)
+
+## Task Management App
+- **Task**
+  - `course` (ForeignKey, Course)
+  - `title` (CharField)
+  - `description` (TextField)
+  - `deadline` (DateTimeField)
+  - `status` (CharField)
+
+## Streak Tracking App
+- **Streak**
+  - `user` (ForeignKey, User)
+  - `last_active_date` (DateTimeField)
+  - `streak_count` (IntegerField)
+
+## Attendance Management App
+- **Attendance**
+  - `user` (ForeignKey, User)
+  - `course` (ForeignKey, Course)
+  - `date` (DateField)
+  - `status` (CharField)
+
+
