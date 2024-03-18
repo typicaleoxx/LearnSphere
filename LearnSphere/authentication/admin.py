@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import User
 # Register your models here.
-class AuthenticationAdmin(admin.ModelAdmin):
+class UserAdmin(admin.ModelAdmin):
     list_display=('username','email','password')
-admin.site.register(User,AuthenticationAdmin)
+admin.site.register(User,UserAdmin)
